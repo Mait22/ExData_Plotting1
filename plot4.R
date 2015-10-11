@@ -18,7 +18,7 @@ household_power_consumption$D_time <- paste(household_power_consumption[,1],hous
 #Converting D_time column to ISOdatetime class
 household_power_consumption$D_time <- as.POSIXct(household_power_consumption$D_time)
 
-#Converting variables Sub_metering 1 to 3 and Global_active_power into numeric form
+#Converting variables Sub_metering 1 to 3, Global_active_power, Voltage and Global_reactive_power into numeric form
 household_power_consumption$Global_active_power <- as.character(household_power_consumption$Global_active_power)
 household_power_consumption$Global_active_power <- as.numeric(household_power_consumption$Global_active_power)
 household_power_consumption$Sub_metering_1 <- as.character(household_power_consumption$Sub_metering_1)
